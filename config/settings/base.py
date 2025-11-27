@@ -10,6 +10,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent.parent
 
 sys.path.insert(0, str(BASE_DIR / "apps"))
 
+AUTH_USER_MODEL = "accounts.User"
+
 SECRET_KEY = 'change-this-in-prod'
 
 DEBUG = True
